@@ -34,6 +34,7 @@ public class Aluno {
         System.out.println("Aluno: "+ getNome()
             + "\n Número de matrícula: "+ getnMatricula()
             +"\n Idade: "+ calcularIdade()
+            +"\n Idade: "+ calcularIdade()
             +"\n pertence ao curso: "+ getCurso());
     }
 
