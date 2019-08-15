@@ -10,10 +10,10 @@ package modelo;
  * @author Cris
  */
 public class Aluno {
-    private int nMatricula;
-    private String nome;
-    private int anoNascimento;
-    private String curso;
+    public int nMatricula;
+    public String nome;
+    public int anoNascimento;
+    public String curso;
     
     public Aluno(){
         nMatricula = 0;
@@ -28,69 +28,12 @@ public class Aluno {
         this.curso = curso;
     }
     public int calcularIdade(){
-        return 2019 - getAnoNascimento();
+        return 2019 - anoNascimento;
     }
     public void impressaoAluno(){
-        System.out.println("Aluno: "+ getNome()
-            + "\n Número de matrícula: "+ getnMatricula()
+        System.out.println("Aluno: "+ nome
+            + "\n Número de matrícula: "+ nMatricula
             +"\n Idade: "+ calcularIdade()
-            +"\n Idade: "+ calcularIdade()
-            +"\n pertence ao curso: "+ getCurso());
-    }
-
-    /**
-     * @return the nMatricula
-     */
-    public int getnMatricula() {
-        return nMatricula;
-    }
-
-    /**
-     * @param nMatricula the nMatricula to set
-     */
-    public void setnMatricula(int nMatricula) {
-        this.nMatricula = nMatricula;
-    }
-
-    /**
-     * @return the nome
-     */
-    public String getNome() {
-        return nome;
-    }
-
-    /**
-     * @param nome the nome to set
-     */
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    /**
-     * @return the anoNascimento
-     */
-    public int getAnoNascimento() {
-        return anoNascimento;
-    }
-
-    /**
-     * @param anoNascimento the anoNascimento to set
-     */
-    public void setAnoNascimento(int anoNascimento) {
-        this.anoNascimento = anoNascimento;
-    }
-
-    /**
-     * @return the curso
-     */
-    public String getCurso() {
-        return curso;
-    }
-
-    /**
-     * @param curso the curso to set
-     */
-    public void setCurso(String curso) {
-        this.curso = curso;
+            +"\n pertence ao curso: "+ curso);
     }
 }
